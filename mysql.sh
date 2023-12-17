@@ -1,10 +1,12 @@
 #!/bin/bash
 
-if [ uid -ne 0 ]
+ID=$(id -u)
+
+if [$ID -ne 0]
 then
-echo "you have to be root user"
+echo "ERROR:NOT A ROOT USER"
 else
-echo "you are a root user"
+echo "root user"
 fi
 
 yum install mysql -y
