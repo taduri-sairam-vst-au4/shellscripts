@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ uid ne 0 ]
+if [ uid ! 0 ]
 then
 echo "you have to be root user"
 else
